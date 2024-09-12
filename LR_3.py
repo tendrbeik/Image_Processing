@@ -74,3 +74,14 @@ plt.title('Восстановленное изображение'), plt.xticks([
 plt.subplot(224), plt.imshow(magnitude_dft_shift_masked, cmap='gray')
 plt.title('Обрезанный спектр'), plt.xticks([]), plt.yticks([])
 plt.show()
+
+#Загружаем исходное изображение и выводим его
+img = cv.imread('images/LR_3.jpg')
+plt.title('Исходное изображение')
+plt.xticks([]), plt.yticks([])
+plt.imshow(img, cmap='gray')
+plt.show()
+
+#Попробуем повысить резкость изображения, но сначала надо бы сдвиг обратить как-нибудь
+
+
