@@ -21,18 +21,6 @@ plt.xticks([])
 plt.yticks([])
 plt.show()
 
-# #Применяем метод Кани
-# threshold1 = 10
-# threshold2 = 20
-# edges = cv.Canny(thresh1, threshold1, threshold2)
-
-# #Применяем инверсию
-# lut = lambda i: 255 - i
-# thresh1 = lut(thresh1)
-# plt.figure(figsize=(20, 20))
-# plt.imshow(thresh1, 'gray')
-# plt.show()
-
 #Применяем гауссовское размытие
 kernel55 = np.ones((5, 5), np.float32) / 25
 kernel77 = np.ones((7, 7), np.float32) / 49
